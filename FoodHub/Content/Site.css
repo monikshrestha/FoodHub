@@ -1,0 +1,119 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    background: #000000c9;
+    position: fixed;
+    padding-top: 30px;
+    width: 230px;
+    height: 100vh;
+}
+
+.name {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 7%;
+}
+
+    .name span {
+        margin-left: 3%;
+    }
+
+nav ul li a {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+    text-decoration: none;
+    font-weight: 500;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    padding: 7%;
+}
+
+nav ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+    nav ul li a.active {
+        background: #71bdff;
+    }
+
+    nav ul li a:hover {
+        background-color: cornflowerblue;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.sidebar a span {
+    margin: 10px;
+}
+
+.sidebar-menu {
+    margin-top: 15%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu {
+    display: none;
+}
+
+nav ul .sub-menu.show {
+    display: block;
+}
+
+.sub-menu a {
+    padding-left: 15%;
+    font-size: 14px;
+}
+
+#down {
+    margin-bottom: 0px;
+    margin-left: 120px;
+}
+
+.set-btn {
+    width: 100%;
+}
+
+
